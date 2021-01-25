@@ -22,7 +22,7 @@ void setup() {
   
   
   pinMode(led, OUTPUT); 
-  Serial.begin(115200);
+  Serial.begin(250000);
   Serial.print("test");
   delay(1000);
   

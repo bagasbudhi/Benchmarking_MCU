@@ -25,6 +25,14 @@ void setup() {
   Serial.begin(250000);
   Serial.print("test");
   delay(1000);
+
+  //fungsi untuk disable enable cache di Ardunesia
+//  Serial.println("Disabling Cache...");
+//  __disable_irq();
+//  if((CMSDK_CACHE->SR & CMSDK_CACHE_SR_CS_Msk) == (0b10 << CMSDK_CACHE_SR_CS_Pos))
+//    CMSDK_CACHE->CCR &=  ~CMSDK_CACHE_CCR_EN_Msk; // Disable cache
+//  while ((CMSDK_CACHE->SR & CMSDK_CACHE_SR_CS_Msk) != (0b00 << CMSDK_CACHE_SR_CS_Pos)); // Wait until cache is disabled
+//  __enable_irq();
   
  
     
